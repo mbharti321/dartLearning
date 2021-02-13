@@ -19,3 +19,16 @@ var str1 = "this is Manish Bharti." +
 void hello() =>  print("Manish");
 
 int area(int length, int weidth) => length * weidth;
+
+
+
+
+// optional parameter
+  void main(){  
+  cityName("Delhi", "Bengaluru");
+  cityName("Delhi");
+}
+
+void cityName(String city1, [String city2]){
+  print("$city1 - $city2");
+}
