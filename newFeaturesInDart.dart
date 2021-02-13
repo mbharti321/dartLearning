@@ -32,3 +32,17 @@ int area(int length, int weidth) => length * weidth;
 void cityName(String city1, [String city2]){
   print("$city1 - $city2");
 }
+
+
+// optional NAMED parameter
+  void main(){
+  
+  cityName("Delhi", city2:"Bengaluru", city3: "hello");
+  //sequence is not need to be maintained if the argument is name parameter
+    cityName("Delhi", city3: "hello", city2:"Bengaluru");
+}
+
+void cityName(String city1, {String city2, String city3}){
+  print("$city1 - $city2 - $city3");
+}
+
